@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RM Mugilan | Mechanical Engineer</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #111;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 2px solid red;
+}
+
+.logo {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    background: linear-gradient(90deg,#080808,#240000);
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: red;
+}
+
+.hero h2 {
+    color: #ff3333;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: white;
+    color: red;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+.title {
+    color: red;
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.about p {
+    color: #ccc;
+    line-height: 2;
+    max-width: 850px;
+}
+
+.skills, .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #171717;
+    padding: 30px;
+    border-left: 4px solid red;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: #290000;
+}
+
+.card h3 {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #ccc;
+    line-height: 1.7;
+}
+
+.college {
+    background: #151515;
+    text-align: center;
+}
+
+.college h2 {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.contact {
+    text-align: center;
+    background: #180000;
+}
+
+.contact p {
+    margin: 12px;
+    color: #ddd;
+}
+
+footer {
+    background: #050505;
+    text-align: center;
+    padding: 25px;
+    color: #888;
+    border-top: 2px solid red;
+}
+
+@media(max-width:650px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 7px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">RM. MUGILAN</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <div class="hero-content">
+        <h2>MECHANICAL ENGINEERING</h2>
+        <h1>HI, I'M <span>RM. MUGILAN</span></h1>
+        <h2>Future Mechanical Engineer | Go-Kart Enthusiast</h2>
+        <p>
+            Welcome to my engineering portfolio.
+            I am passionate about mechanical design,
+            automobile technology, innovation and
+            Go-Kart development.
+        </p>
+        <a href="#projects" class="btn">VIEW MY PROJECTS</a>
+    </div>
+</div>
+
+<section class="about" id="about">
+    <h2 class="title">About Me</h2>
+    <p>
+        I am RM. Mugilan, a Mechanical Engineering student
+        at Mount Zion College of Engineering & Technology.
+        I am interested in automobile engineering,
+        manufacturing, machine design and Go-Kart technology.
+        My ambition is to develop innovative engineering
+        solutions and improve my technical skills.
+    </p>
+</section>
+
+<section id="skills">
+    <h2 class="title">My Skills</h2>
+    <div class="skills">
+        <div class="card">
+            <h3>Mechanical Design</h3>
+            <p>Machine components, design concepts and engineering drawings.</p>
+        </div>
+        <div class="card">
+            <h3>CAD Design</h3>
+            <p>Learning 2D and 3D mechanical modelling.</p>
+        </div>
+        <div class="card">
+            <h3>Automobile Engineering</h3>
+            <p>Vehicle systems, engines and automotive technology.</p>
+        </div>
+        <div class="card">
+            <h3>Teamwork</h3>
+            <p>Creative thinking, problem solving and project development.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="title">My Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>🏎️ Go-Kart Project</h3>
+            <p>
+                Exploring Go-Kart chassis design,
+                steering systems, braking systems,
+                engine mounting and vehicle performance.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Mechanical Design</h3>
+            <p>
+                Exploring innovative machine designs
+                and practical mechanical engineering concepts.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="college">
+    <h2>MY COLLEGE</h2>
+    <h3>Mount Zion College of Engineering & Technology</h3>
+    <p>Affiliated to Anna University | Pudukkottai, Tamil Nadu</p>
+    <p>Department of Mechanical Engineering</p>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="title">Contact Me</h2>
+    <p>Name: RM. Mugilan</p>
+    <p>Department: Mechanical Engineering</p>
+    <p>College: Mount Zion College of Engineering & Technology</p>
+    <p>Email: Add your email address here</p>
+</section>
+
+<footer>
+    <p>© 2026 RM. MUGILAN | MECHANICAL ENGINEERING PORTFOLIO</p>
+    <p>DESIGNED WITH PASSION 🏎️</p>
+</footer>
+
+</body>
+</html>
