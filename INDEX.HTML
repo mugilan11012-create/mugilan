@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mugilan | Mechanical Engineer Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: white;
+    color: #222;
+}
+
+header {
+    background: #0645a5;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    font-size: 28px;
+}
+
+header span {
+    color: #ff3535;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff4545;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    color: #0645a5;
+}
+
+.hero h1 span {
+    color: #ed2929;
+}
+
+.hero h3 {
+    margin: 15px;
+    font-size: 24px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 30px;
+    background: #ed2929;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #0645a5;
+}
+
+section {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #0645a5;
+    margin-bottom: 25px;
+}
+
+section h2 span {
+    color: #ed2929;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    padding: 20px;
+    width: 200px;
+    border-bottom: 4px solid #ed2929;
+    box-shadow: 0 2px 12px #ddd;
+    border-radius: 8px;
+    color: #0645a5;
+    font-weight: bold;
+}
+
+.project {
+    max-width: 650px;
+    margin: 15px auto;
+    padding: 25px;
+    box-shadow: 0 2px 12px #ddd;
+    border-left: 5px solid #ed2929;
+    border-radius: 8px;
+}
+
+.project h3 {
+    color: #0645a5;
+    margin-bottom: 10px;
+}
+
+.contact {
+    background: #f2f6ff;
+}
+
+.contact p {
+    margin: 15px;
+    font-size: 18px;
+}
+
+.contact a {
+    color: #ed2929;
+    text-decoration: none;
+}
+
+footer {
+    background: #0645a5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width:600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+    .hero h1 {
+        font-size: 38px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>MUGI<span>LAN.</span></h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <div>
+        <h1>Hi, I'm <span>MUGILAN</span></h1>
+        <h3>Mechanical Engineering Student</h3>
+        <p>Welcome to my personal portfolio website.</p>
+        <a href="#about" class="btn">Explore My Portfolio</a>
+    </div>
+</div>
+
+<section class="about" id="about">
+    <h2>About <span>Me</span></h2>
+    <p>
+        Hello! I'm Mugilan, a Mechanical Engineering student.
+        I am passionate about mechanical design, manufacturing,
+        engineering technology and innovation.
+        My goal is to improve my technical skills and build
+        a successful career in the engineering field.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>My <span>Skills</span></h2>
+    <div class="skills-container">
+        <div class="skill">AutoCAD</div>
+        <div class="skill">SolidWorks</div>
+        <div class="skill">Mechanical Design</div>
+        <div class="skill">Manufacturing</div>
+        <div class="skill">Problem Solving</div>
+        <div class="skill">Teamwork</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My <span>Projects</span></h2>
+    <div class="project">
+        <h3>Mechanical Engineering Project</h3>
+        <p>
+            Add your project title, design details,
+            working principle and project description here.
+        </p>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact <span>Me</span></h2>
+    <p><b>Name:</b> Mugilan</p>
+    <p><b>Department:</b> Mechanical Engineering</p>
+    <p><b>Phone:</b>
+        <a href="tel:9488500540">9488500540</a>
+    </p>
+    <a href="tel:9488500540" class="btn">Call Me</a>
+</section>
+
+<footer>
+    <p>© 2026 Mugilan | Mechanical Engineering Portfolio</p>
+</footer>
+
+</body>
+</html>
